@@ -1,0 +1,20 @@
+{% extends 'cliente/base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+
+        <button type="submit" class='btn btn-dark'>Agregar</button>
+
+
+    </form>
+
+
+{% endblock content %}
+
+    
